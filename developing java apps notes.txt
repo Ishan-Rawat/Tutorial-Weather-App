@@ -32,5 +32,22 @@ id syntax: android:id="@+id/et_search_box"
 + sign: tells the IDE to create a new ID
 id: tells the IDE that we are creating an ID
 
+LOGGING:
+1. Devs use log messages to communicate info abt their apps.
+2. Log messages belong to one of the following LEVELS:
+    2.1. WTF (What a Terrible Failure)( Rarely used(Hopefully))
+    2.2. Error \
+    2.3. Warn  -  Three of them are preserved in the release version of the application. They are used to capture and diagnose problems.
+    2.4. Info /
+    2.5. Debug   \
+                  - Both of these are used in dev version of the app.
+    2.6. Verbose /
 
-
+3. All apps dump their logs in the same bucket.
+4. The syntax for logs is: Log.x(String TAG, String Message) TAG is usually a class name
+5. ERROR - This level is used to log obvious errors
+6. WARN - This level is used log things that do not cause the app to error or crash, but are still of concern. For example low disk storage availability.
+7. INFO - Purely informational messages like : The app is connected to the internet.
+8. DEBUG - Used during development to log things like the response from a web service, etc.
+9. VERBOSE - Used to record very granular details.
+10. WTF - For errors that are much more severe than Error. For example an error that makes your device hang.
