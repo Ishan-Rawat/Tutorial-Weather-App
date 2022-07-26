@@ -1,0 +1,36 @@
+Developing java apps notes-
+
+lec 12: Activities packages and layouts
+
+Andoroid apps are a collection of connected components.
+There are 4 types of components:
+1. Activity
+2. Service
+3. contents provider
+4. Broadcast reciever
+
+ACTIVITY:
+1. Activites are the components that are responsible for most app-user interaction.
+2. They are meant to be a single focused thing a user can do.
+3. They are responsible for creating the window that your application uses to draw and receive events from the system.
+4. From the users POV the an android application is a series of activities.
+5. The app stores these activities in a stack. When the user presses the back button the app shows the previous activity in the stack.
+
+HOW ACTIVITIES ARE REGISTERED:
+In the android manifest file, inside the application tag there is an activity tag and inside that tag there is an intent-filter tag, inside it the activities are registered.
+
+LAYOUTS:
+1. Activites have layouts that define what to show where.
+2. An activity creates views to show the user information, and to let the user interact with the activity.
+3. An activity determines what views to create (and where to put them), by reading an XML layout file.
+4. XML: Is a language that allows us to store information in a manner that is readable by both humans and machines
+
+
+Exercise 2:
+id syntax: android:id="@+id/et_search_box"
+@ symbol: tells the IDE that the stuff inside the qoutes is not a normal string
++ sign: tells the IDE to create a new ID
+id: tells the IDE that we are creating an ID
+
+
+
